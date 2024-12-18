@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIL Compliance Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .asil-controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .asil-btn {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: 2px solid #007bff;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .asil-btn.active {
+            background: #007bff;
+            color: white;
+        }
+
+        .legend {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .legend p {
+            margin: 5px 0;
+        }
+
+        .asil-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .asil-table th,
+        .asil-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .section-header {
+            background: #e8f4ea;
+            font-weight: bold;
+        }
+
+        .asil-cell {
+            text-align: center;
+        }
+
+        .highlighted {
+            background-color: #fff3cd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ASIL Compliance Assessment</h1>
+        
+        <div class="asil-controls">
+            <button class="asil-btn" data-level="A">ASIL A</button>
+            <button class="asil-btn" data-level="B">ASIL B</button>
+            <button class="asil-btn" data-level="C">ASIL C</button>
+            <button class="asil-btn" data-level="D">ASIL D</button>
+        </div>
+
+        <div class="legend">
+            <p>(++) - Highly recommended by ISO 26262-6</p>
+            <p>(+) - Recommended by ISO 26262-6</p>
+            <p>o - No recommendation by ISO 26262-6</p>
+        </div>
+
+        <table class="asil-table">
+            <thead>
+                <tr>
+                    <th>Functionality</th>
+                    <th>ASIL A</th>
+                    <th>ASIL B</th>
+                    <th>ASIL C</th>
+                    <th>ASIL D</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Coding Standards Compliance -->
+                <tr class="section-header">
+                    <td colspan="5">Coding Standards Compliance</td>
+                </tr>
+                <tr>
+                    <td>Static Code Analysis (Table 7: 1h)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+            
+                <!-- Analysis Types -->
+                <tr class="section-header">
+                    <td colspan="5">Analysis Types</td>
+                </tr>
+                <tr>
+                    <td>Enforcement of Low Complexity (Table 1: 1a)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <tr>
+                    <td>Use of Language Subsets (Table 1: 1b)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <tr>
+                    <td>Enforcement of Strong Typing (Table 1: 1c)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <tr>
+                    <td>Use of Defensive Implementation Techniques (Table 1: 1g)</td>
+                    <td class="asil-cell" data-level="A">+</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <tr>
+                    <td>Use of Well-Trusted Design Principles (Table 1: 1f)</td>
+                    <td class="asil-cell" data-level="A">+</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <tr>
+                    <td>Use of Style Guides (Table 1: 1g)</td>
+                    <td class="asil-cell" data-level="A">+</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <tr>
+                    <td>Use of Naming Conventions (Table 1: 1h)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+            
+                <!-- Specific Coding Standards Guidelines -->
+                <tr class="section-header">
+                    <td colspan="5">Specific Coding Standards Guidelines</td>
+                </tr>
+                <tr>
+                    <td>One Entry and One Exit Point in Subprograms and Functions (Table 6: 1a)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <tr>
+                    <td>No Dynamic Objects or Variables (Table 6: 1b)</td>
+                    <td class="asil-cell" data-level="A">+</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <!-- Continue with all guidelines -->
+            
+                <!-- Flow Analysis -->
+                <tr class="section-header">
+                    <td colspan="5">Flow Analysis: Static Data & Execution Flow Analysis</td>
+                </tr>
+                <tr>
+                    <td>Semi-Formal Verification (Table 7: 1d)</td>
+                    <td class="asil-cell" data-level="A">+</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <!-- Continue with all flow analysis items -->
+            
+                <!-- Unit & Integration Testing -->
+                <tr class="section-header">
+                    <td colspan="5">Unit & Integration Testing</td>
+                </tr>
+                <tr>
+                    <td>Fault Injection Test (Table 7: 1l)</td>
+                    <td class="asil-cell" data-level="A">+</td>
+                    <td class="asil-cell" data-level="B">+</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <!-- Continue with all testing items -->
+            
+                <!-- Structural Code Coverage -->
+                <tr class="section-header">
+                    <td colspan="5">Structural Code Coverage</td>
+                </tr>
+                <tr>
+                    <td>Statement Coverage (Table 9: 1a)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+                <!-- Continue with all coverage items -->
+            
+                <!-- Test Environment -->
+                <tr class="section-header">
+                    <td colspan="5">Test Environment: On-Target Hardware</td>
+                </tr>
+                <tr>
+                    <td>Hardware-in-the-Loop (Table 13: 1a)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">++</td>
+                    <td class="asil-cell" data-level="C">++</td>
+                    <td class="asil-cell" data-level="D">++</td>
+                </tr>
+            
+                <!-- Parasoft DTP -->
+                <tr class="section-header">
+                    <td colspan="5">Parasoft DTP: Reporting & Analytics</td>
+                </tr>
+                <tr>
+                    <td>Dashboard Walk Through (Table 7: 1a)</td>
+                    <td class="asil-cell" data-level="A">++</td>
+                    <td class="asil-cell" data-level="B">+</td>
+                    <td class="asil-cell" data-level="C">o</td>
+                    <td class="asil-cell" data-level="D">o</td>
+                </tr>
+                <!-- Continue with all reporting items -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.asil-btn');
+            
+            function highlightLevel(level) {
+                // Remove all highlights
+                document.querySelectorAll('.asil-cell').forEach(cell => {
+                    cell.classList.remove('highlighted');
+                });
+                buttons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // Add new highlights
+                document.querySelectorAll(`.asil-cell[data-level="${level}"]`).forEach(cell => {
+                    cell.classList.add('highlighted');
+                });
+                document.querySelector(`.asil-btn[data-level="${level}"]`).classList.add('active');
+            }
+
+            // Add click handlers
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    highlightLevel(this.getAttribute('data-level'));
+                });
+            });
+
+            // Initial highlight
+            highlightLevel('A');
+        });
+    </script>
+</body>
+</html>
