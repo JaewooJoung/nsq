@@ -108,121 +108,482 @@
                     <th>ASIL D</th>
                 </tr>
             </thead>
-            <tbody>
-                <!-- Coding Standards Compliance -->
-                <tr class="section-header">
-                    <td colspan="5">Coding Standards Compliance</td>
-                </tr>
-                <tr>
-                    <td>Static Code Analysis (Table 7: 1h)</td>
-                    <td class="asil-cell" data-level="A">++</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-            
-                <!-- Analysis Types -->
-                <tr class="section-header">
-                    <td colspan="5">Analysis Types</td>
-                </tr>
-                <tr>
-                    <td>Enforcement of Low Complexity (Table 1: 1a)</td>
-                    <td class="asil-cell" data-level="A">++</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <tr>
-                    <td>Use of Language Subsets (Table 1: 1b)</td>
-                    <td class="asil-cell" data-level="A">++</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <tr>
-                    <td>Enforcement of Strong Typing (Table 1: 1c)</td>
-                    <td class="asil-cell" data-level="A">++</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <tr>
-                    <td>Use of Defensive Implementation Techniques (Table 1: 1g)</td>
-                    <td class="asil-cell" data-level="A">+</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <tr>
-                    <td>Use of Well-Trusted Design Principles (Table 1: 1f)</td>
-                    <td class="asil-cell" data-level="A">+</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <tr>
-                    <td>Use of Style Guides (Table 1: 1g)</td>
-                    <td class="asil-cell" data-level="A">+</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <tr>
-                    <td>Use of Naming Conventions (Table 1: 1h)</td>
-                    <td class="asil-cell" data-level="A">++</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-            
-                <!-- Specific Coding Standards Guidelines -->
-                <tr class="section-header">
-                    <td colspan="5">Specific Coding Standards Guidelines</td>
-                </tr>
-                <tr>
-                    <td>One Entry and One Exit Point in Subprograms and Functions (Table 6: 1a)</td>
-                    <td class="asil-cell" data-level="A">++</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <tr>
-                    <td>No Dynamic Objects or Variables (Table 6: 1b)</td>
-                    <td class="asil-cell" data-level="A">+</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <!-- Continue with all guidelines -->
-            
-                <!-- Flow Analysis -->
-                <tr class="section-header">
-                    <td colspan="5">Flow Analysis: Static Data & Execution Flow Analysis</td>
-                </tr>
-                <tr>
-                    <td>Semi-Formal Verification (Table 7: 1d)</td>
-                    <td class="asil-cell" data-level="A">+</td>
-                    <td class="asil-cell" data-level="B">++</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <!-- Continue with all flow analysis items -->
-            
-                <!-- Unit & Integration Testing -->
-                <tr class="section-header">
-                    <td colspan="5">Unit & Integration Testing</td>
-                </tr>
-                <tr>
-                    <td>Fault Injection Test (Table 7: 1l)</td>
-                    <td class="asil-cell" data-level="A">+</td>
-                    <td class="asil-cell" data-level="B">+</td>
-                    <td class="asil-cell" data-level="C">++</td>
-                    <td class="asil-cell" data-level="D">++</td>
-                </tr>
-                <!-- Continue with all testing items -->
-            
-                <!-- Structural Code Coverage -->
-                <tr class="section-header">
+                <tbody>
+                    <!-- Coding Standards Compliance -->
+                    <tr class="section-header">
+                        <td colspan="5">Coding Standards Compliance</td>
+                    </tr>
+                    <tr>
+                        <td>Static Code Analysis (Table 7: 1h)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                
+                    <!-- Analysis Types -->
+                    <tr class="section-header">
+                        <td colspan="5">Analysis Types</td>
+                    </tr>
+                    <tr>
+                        <td>Enforcement of Low Complexity (Table 1: 1a)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Language Subsets (Table 1: 1b)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Enforcement of Strong Typing (Table 1: 1c)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Defensive Implementation Techniques (Table 1: 1g)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Well-Trusted Design Principles (Table 1: 1f)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Style Guides (Table 1: 1g)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Naming Conventions (Table 1: 1h)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                
+                    <!-- Specific Coding Standards Guidelines -->
+                    <tr class="section-header">
+                        <td colspan="5">Specific Coding Standards Guidelines</td>
+                    </tr>
+                    <tr>
+                        <td>One Entry and One Exit Point in Subprograms and Functions (Table 6: 1a)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Dynamic Objects or Variables (Table 6: 1b)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Initialization of Variables (Table 6: 1c)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Multiple Use of Variable Names (Table 6: 1d)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Avoid Global Variables or Else Justify Their Usage (Table 6: 1e)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Restricted Use of Pointers (Table 6: 1f)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Implicit Type Conversions (Table 6: 1g)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Hidden Data Flow or Control Flow (Table 6: 1h)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Unconditional Jumps (Table 6: 1i)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Recursions (Table 6: 1j)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                
+                    <!-- Flow Analysis -->
+                    <tr class="section-header">
+                        <td colspan="5">Flow Analysis: Static Data & Execution Flow Analysis</td>
+                    </tr>
+                    <tr>
+                        <td>Semi-Formal Verification (Table 7: 1d)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Formal Verification (Table 7: 1e)</td>
+                        <td class="asil-cell" data-level="A">o</td>
+                        <td class="asil-cell" data-level="B">o</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">+</td>
+                    </tr>
+                    <tr>
+                        <td>Control Flow Analysis (Table 7: 1f)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Data Flow Analysis (Table 7: 1g)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Static Code Analysis (Table 7: 1h)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Static Analyses Based on Abstract Interpretation (Table 7: 1i)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">+</td>
+                    </tr>
+                
+                    <!-- Unit & Integration Testing -->
+                    <tr class="section-header">
+                        <td colspan="5">Unit & Integration Testing</td>
+                    </tr>
+                    <tr>
+                        <td>Fault Injection Test (Table 7: 1l)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Resource Usage Evaluation (Table 7: 1m)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Analysis of Requirements (Table 8: 1a)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Generation and Analysis of Equivalence Classes (Table 8: 1b)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Analysis of Boundary Values (Table 8: 1c)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Error Guessing Based on Knowledge or Experience (Table 8: 1d)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">+</td>
+                    </tr>
+                
+                    <!-- Structural Code Coverage -->
+                    <tr class="section-header">
+                <tbody>
+                    <!-- Coding Standards Compliance -->
+                    <tr class="section-header">
+                        <td colspan="5">Coding Standards Compliance</td>
+                    </tr>
+                    <tr>
+                        <td>Static Code Analysis (Table 7: 1h)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                
+                    <!-- Analysis Types -->
+                    <tr class="section-header">
+                        <td colspan="5">Analysis Types</td>
+                    </tr>
+                    <tr>
+                        <td>Enforcement of Low Complexity (Table 1: 1a)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Language Subsets (Table 1: 1b)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Enforcement of Strong Typing (Table 1: 1c)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Defensive Implementation Techniques (Table 1: 1g)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Well-Trusted Design Principles (Table 1: 1f)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Style Guides (Table 1: 1g)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Use of Naming Conventions (Table 1: 1h)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                
+                    <!-- Specific Coding Standards Guidelines -->
+                    <tr class="section-header">
+                        <td colspan="5">Specific Coding Standards Guidelines</td>
+                    </tr>
+                    <tr>
+                        <td>One Entry and One Exit Point in Subprograms and Functions (Table 6: 1a)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Dynamic Objects or Variables (Table 6: 1b)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Initialization of Variables (Table 6: 1c)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Multiple Use of Variable Names (Table 6: 1d)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Avoid Global Variables or Else Justify Their Usage (Table 6: 1e)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Restricted Use of Pointers (Table 6: 1f)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Implicit Type Conversions (Table 6: 1g)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Hidden Data Flow or Control Flow (Table 6: 1h)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Unconditional Jumps (Table 6: 1i)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>No Recursions (Table 6: 1j)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                
+                    <!-- Flow Analysis -->
+                    <tr class="section-header">
+                        <td colspan="5">Flow Analysis: Static Data & Execution Flow Analysis</td>
+                    </tr>
+                    <tr>
+                        <td>Semi-Formal Verification (Table 7: 1d)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Formal Verification (Table 7: 1e)</td>
+                        <td class="asil-cell" data-level="A">o</td>
+                        <td class="asil-cell" data-level="B">o</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">+</td>
+                    </tr>
+                    <tr>
+                        <td>Control Flow Analysis (Table 7: 1f)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Data Flow Analysis (Table 7: 1g)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Static Code Analysis (Table 7: 1h)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Static Analyses Based on Abstract Interpretation (Table 7: 1i)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">+</td>
+                    </tr>
+                
+                    <!-- Unit & Integration Testing -->
+                    <tr class="section-header">
+                        <td colspan="5">Unit & Integration Testing</td>
+                    </tr>
+                    <tr>
+                        <td>Fault Injection Test (Table 7: 1l)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Resource Usage Evaluation (Table 7: 1m)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Analysis of Requirements (Table 8: 1a)</td>
+                        <td class="asil-cell" data-level="A">++</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Generation and Analysis of Equivalence Classes (Table 8: 1b)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Analysis of Boundary Values (Table 8: 1c)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">++</td>
+                        <td class="asil-cell" data-level="C">++</td>
+                        <td class="asil-cell" data-level="D">++</td>
+                    </tr>
+                    <tr>
+                        <td>Error Guessing Based on Knowledge or Experience (Table 8: 1d)</td>
+                        <td class="asil-cell" data-level="A">+</td>
+                        <td class="asil-cell" data-level="B">+</td>
+                        <td class="asil-cell" data-level="C">+</td>
+                        <td class="asil-cell" data-level="D">+</td>
+                    </tr>
+                
+                    <!-- Structural Code Coverage -->
+                    <tr class="section-header">
                     <td colspan="5">Structural Code Coverage</td>
                 </tr>
                 <tr>
